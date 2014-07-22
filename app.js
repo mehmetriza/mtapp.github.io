@@ -27,7 +27,7 @@ angular.module('httpExample', [])
         $scope.data = data || "Request failed";
         $scope.status = status;
     });
-};
+   };
 
     $scope.updateModel = function(method, url) {
       $scope.method = method;
