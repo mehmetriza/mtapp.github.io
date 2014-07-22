@@ -15,9 +15,7 @@ angular.module('httpExample', [])
 		headers:{
 			'Accept':"* / *",
 			'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Methods': 'GET',
-            'Access-Control-Allow-Headers': 'Content-Type, X-Requested-With',
-            'X-Random-Shit':'123123123'
+            		'Access-Control-Allow-Methods': 'GET',
 		}
 	}).
     success(function(data, status) {
