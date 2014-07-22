@@ -1,0 +1,1 @@
+*Selçuk Üniversitesi Öğrenci Giriş Uygulaması Olacak*
