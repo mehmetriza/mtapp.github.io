@@ -35,8 +35,8 @@
     };
   }]);
 */
-angular.module('httpExample', ['ngResource']).controller('FetchController', function($scope, $resource) {
+angular.module('httpExample', ['ngResource']).controller('FetchController',['$scope', '$resource',function($scope,$resource) {
     $scope.refresh = function() {
         $scope.html = $resource('https://asp1.selcuk.edu.tr/asp/ogr/giris.htm').query();
     };
-});
+}]);
