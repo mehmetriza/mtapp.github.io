@@ -1,4 +1,4 @@
-angular.module('httpExample', [])
+/*angular.module('httpExample', [])
 .controller('FetchController', ['$scope', '$http', '$templateCache',
   function($scope, $http, $templateCache) {
     $scope.method = 'GET';
@@ -34,3 +34,9 @@ angular.module('httpExample', [])
       $scope.url = url;
     };
   }]);
+*/
+angular.module('httpExample', ['ngResource']).controller('FetchController', function($scope, $resource) {
+    $scope.refresh = function() {
+        $scope.html = $resource('https://asp1.selcuk.edu.tr/asp/ogr/giris.htm').query();
+    };
+});
