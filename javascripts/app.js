@@ -4,7 +4,7 @@ angular.module('httpExample', [])
     $scope.method = 'GET';
     $scope.url = 'https://asp1.selcuk.edu.tr/asp/ogr/not.asp';
 
-    $scope.fetch = function() {
+    $scope.refresh = function() {
       $scope.code = null;
       $scope.response = null;
 
