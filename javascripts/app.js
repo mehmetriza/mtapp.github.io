@@ -13,8 +13,8 @@ angular.module('httpExample', [])
 		url: $scope.url,
 		cache: $templateCache,
 		headers:{
-			'Accept':"* / *",
-			'Access-Control-Allow-Origin': '*',
+			//'Accept':"* / *",
+			//'Access-Control-Allow-Origin': '*',
             //'Access-Control-Allow-Methods': 'GET',
 		}
 	}).
